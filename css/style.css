@@ -1,0 +1,405 @@
+/* ====== Global ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 34px;
+}
+p {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: justify;
+  color: #777;
+}
+/* ====== Home Section ====== */
+
+#home {
+  height: 100vh;
+  background: url('../images/background.png') center;
+  background-size: cover;
+}
+.container {
+  margin: 0 100px;
+}
+.container .logo {
+  width: 100px;
+  margin-top: 30px;
+}
+.home-text {
+  max-width: 350px;
+  margin-top: 140px;
+}
+
+.square {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #f67c92;
+  margin: 15px 0;
+}
+.common-btn {
+  background-color: transparent;
+  padding: 18px 40px;
+  font-weight: bold;
+  border: 2px solid #f67c92;
+  outline: none;
+  cursor: pointer;
+}
+.home-text button {
+  margin: 20px 0 60px 0;
+}
+.line {
+  line-height: 8px;
+}
+.line .line1 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-color: #f67c92;
+}
+.line .line2 {
+  display: inline-block;
+  width: 80px;
+  height: 1px;
+  background-color: #f67c92;
+}
+.line .line3 {
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  background-color: #f67c92;
+}
+
+/* ====== Side Nav section ====== */
+
+#sideNav {
+  position: fixed;
+  right: -250px;
+  top: 0;
+  z-index: 2;
+  width: 250px;
+  height: 100vh;
+  background-color: #f67c92;
+  transition: 0.5s;
+}
+#sideNav li {
+  list-style: none;
+  margin: 50px 20px;
+}
+#sideNav a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+#sideNav a:hover {
+  margin-left: 20px;
+}
+#menuBtn {
+  position: fixed;
+  right: 65px;
+  top: 35px;
+  width: 50px;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#menuBtn:hover {
+  transform: rotate(360deg);
+}
+
+/* ====== About Us Section ====== */
+
+#about,
+#offers {
+  padding: 120px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-left-col {
+  flex-basis: 50%;
+}
+.about-left-col img {
+  width: 100%;
+}
+.about-right-col {
+  flex-basis: 50%;
+  text-align: right;
+}
+.about-text {
+  display: inline-block;
+  max-width: 500px;
+  margin-right: 100px;
+}
+.about-text p {
+  margin-bottom: 30px;
+}
+.about-text h2 {
+  margin: 50px 0 15px;
+  font-size: 28px;
+  font-style: italic;
+}
+.about-text h3 {
+  font-size: 20px;
+  color: #797979;
+  font-style: italic;
+}
+
+/* ====== Feature Section ====== */
+
+#features {
+  padding: 50px 0;
+}
+.feature-row {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature-col {
+  flex-basis: 25%;
+  text-align: center;
+}
+.feature-col img {
+  width: 100px;
+}
+.feature-col h4 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.feature-btn {
+  margin: 80px auto 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.feature-btn .line {
+  text-align: right;
+  margin: 0 25px;
+}
+
+/* ====== Courses Section ====== */
+
+#courses {
+  padding: 100px 0;
+}
+.course-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.course-left-col {
+  flex-basis: 50%;
+}
+.course-text {
+  max-width: 350px;
+}
+.course-text button {
+  margin: 20px 0 60px 0;
+}
+.course-right-col {
+  flex-basis: 50%;
+}
+.course-right-col img {
+  width: 100%;
+}
+
+/* ====== Offers Section, use About section almost everything ====== */
+
+#offers .common-btn {
+  margin: 20px 0 60px 0;
+}
+
+/* ====== Contact Us Section ====== */
+
+/* #contact {
+  padding-top: 100px;
+} */
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.contact-left-col,
+.contact-right-col {
+  flex-basis: 50%;
+}
+.contact-right-col img {
+  width: 100%;
+}
+.form-group {
+  margin: 30px 0;
+  max-width: 350px;
+}
+.form-group input {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  outline: none;
+  border: 2px solid #f67c92;
+}
+.btn-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.btn-box button {
+  flex-basis: 48%;
+  padding: 18px 0;
+}
+
+/* ====== Footer Section ====== */
+
+#footer {
+  padding: 50px 0 30px;
+}
+#footer hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #f67c92;
+}
+.footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-left-col {
+  flex-basis: 50%;
+  margin-top: 60px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.link-title h4 {
+  color: #f67c92;
+  margin-bottom: 20px;
+}
+.link-title small {
+  font-size: 13px;
+  color: #777;
+}
+.footer-right-col {
+  flex-basis: 35%;
+}
+.footer-info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-logo img {
+  width: 100px;
+}
+.footer-logo button {
+  padding: 12px 38px;
+  margin-top: 20px;
+  font-size: 10px;
+}
+.copyright-text,
+.footer-logo {
+  flex-basis: 30%;
+}
+
+/* ====== Social-icons Section ====== */
+
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.social-icons img {
+  width: 20px;
+  display: block;
+  margin: 0 auto 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.social-icons img:hover {
+  transform: rotate(360deg);
+}
+
+/* ===== Media Queries Section ===== */
+
+@media only screen and (max-width: 770px) {
+  #home {
+    background-image: none;
+  }
+  .container {
+    margin: 0 50px;
+  }
+  .container .logo {
+    width: 70px;
+    margin-top: 27px;
+  }
+  .home-text {
+    margin-top: 100px;
+  }
+  h1 {
+    font-size: 25px;
+  }
+  #menuBtn {
+    width: 40px;
+    right: 40px;
+  }
+  .social-icons img {
+    width: 15px;
+    margin: 0 auto 15px;
+  }
+  .common-btn {
+    padding: 15px 30px;
+  }
+  .about-left-col,
+  .about-right-col,
+  .course-left-col,
+  .course-right-col,
+  .contact-left-col,
+  .contact-right-col,
+  .footer-left-col,
+  .footer-right-col {
+    flex-basis: 100%;
+  }
+  .home-text {
+    margin-top: 50px;
+  }
+
+  .about-text {
+    margin: 50px 20px;
+  }
+  #about,
+  #offers {
+    padding: 30px 0;
+  }
+  .course-right-col {
+    margin-top: 50px;
+  }
+  .feature-col {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .feature-btn button {
+    padding: 10px 20px;
+  }
+  .link-title {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  .footer-left-col {
+    margin-bottom: 30px;
+  }
+}
